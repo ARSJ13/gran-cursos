@@ -102,16 +102,16 @@ hr{
   margin: 1rem 0;
 }
 .filter-title>h4{
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin-bottom: 1rem;
   text-transform: capitalize;
   font-weight: 300;
-
 }
 .filter-container{
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.135216);
   border-radius: 8px;
   padding: 1rem;
+  background: #F4F5F7;
 }
 .radio{
   display: flex;
@@ -137,7 +137,7 @@ hr{
   justify-content: space-between;
 }
 .range-title-box>span{
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 600;
 }
 .range-title{

@@ -6,8 +6,8 @@
       </div>
       <div class="search-nav">
         <button>Default<v-icon class="search-icon">mdi-chevron-right</v-icon></button>
-        <button><v-icon>mdi-view-grid-outline</v-icon></button>
-        <button><v-icon>mdi-menu</v-icon></button>
+        <button><v-icon color="#0052CC">mdi-view-grid-outline</v-icon></button>
+        <button><v-icon color="#0052CC">mdi-menu</v-icon></button>
       </div>
     </div>
     <div class="search-body">
@@ -41,6 +41,8 @@ export default {
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.135216);
   border-radius: 8px;
   margin-left: 0.5rem;
+  color: #0052CC;
+  font-weight: 600;
 }
 .search-icon{
   margin-left: 1.5rem;
@@ -49,10 +51,15 @@ export default {
 .search-body{
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.135216);
   border-radius: 8px;
-  margin-top: 1rem;
+  margin: 1rem 0;
   padding: 0.5rem 1rem;
   display: flex;
   justify-content: space-between;
+}
+@media screen and (max-width: 580px) {
+  .search-header{
+    display: none;
+  }
 }
 
 </style>

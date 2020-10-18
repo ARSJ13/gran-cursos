@@ -3,7 +3,7 @@
     <h4 class="title">{{ title }}</h4>
     <div class="aside-container">
       <div class="aside-content">
-        <v-icon class="icon">{{ icon }}</v-icon>
+        <v-icon class="icon" color="#0052CC">{{ icon }}</v-icon>
         <h4 class="title-icon">{{ subtitle }}</h4>
       </div>
       <div :class=direction>
@@ -27,7 +27,7 @@ export default {
 .title{
   margin: 1rem 0;
   text-transform: uppercase;
-  opacity: 0.4;
+  color: #0052CC;
 }
 .aside-container{
   display: flex;
@@ -40,9 +40,10 @@ export default {
 .aside-content>.icon{
   color: #172B4D;
   margin-right: 0.7rem;
+  cursor: pointer;
 }
 .aside-content>.title-icon{
-  color: #172B4D;
+  color: #091E42;
   text-transform: capitalize;
 }
 .right{

@@ -48,4 +48,9 @@ header.card-actions-container{
   padding: 5px;
   border-radius: 50%;
 }
+@media screen and (max-width: 580px) {
+  header>.card-actions-container{
+    display: none;
+  }
+}
 </style>

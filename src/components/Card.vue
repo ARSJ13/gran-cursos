@@ -56,6 +56,7 @@ export default {
 
 <style>
 .card-container{
+  margin: .5rem 0;
   display: flex;
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.135216);
   border-radius: 8px;
@@ -65,6 +66,7 @@ export default {
 }
 .card-description{
   display: flex;
+  align-items: center;
 }
 .card-image>img{
   height: 150px;
@@ -79,9 +81,12 @@ export default {
 }
 .card-content>h4{
   text-transform: capitalize;
+  font-size: 0.9rem;
   font-weight: 400;
+  color: #0052CC;
 }
 .card-content>p{
+  box-sizing: border-box;
   font-size: 0.8rem;
   line-height: 1.2rem;
 }
@@ -129,6 +134,7 @@ export default {
   text-transform: uppercase;
   font-size: 0.8rem;
   border-radius: 5px;
+  padding: 0.4rem 0;
 }
 .price-shopping{
   background: #36B37E;
@@ -137,8 +143,20 @@ export default {
   text-transform: uppercase;
   font-size: 0.8rem;
   border-radius: 5px;
+  padding: 0.4rem 0;
 }
 .icon{
   margin-right: 3px;
+}
+@media screen and (max-width: 580px) {
+  .card-container{
+    justify-content: space-around;
+  }
+  .card-description{
+    justify-content: space-between;
+  }
+  .card-content{
+    display: none;
+  }
 }
 </style>

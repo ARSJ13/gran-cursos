@@ -1,7 +1,6 @@
 <template>
     <aside>
         <v-container>
-         <!-- seta > mdi-apple-keyboard-control -->
             <img class="logo" :src=logo alt="Logo">
             <div class="menu">
                 <MenuAside title="apps" icon="mdi-email-outline" subtitle="email"></MenuAside>
@@ -66,6 +65,10 @@ export default {
 </script>
 
 <style>
+aside{
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.170509);
+    background: #F4F5F7;
+}
 .logo{
   max-width: 10rem;
   width: 100%;
