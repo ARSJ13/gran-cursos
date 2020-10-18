@@ -41,13 +41,28 @@
         </form>
         <hr/>
       </div>
+      <div class="rating">
+        <div>
+          <h4 class="rating-title">rating</h4>
+        </div>
+        <Rating :check=5 :amount=8500 ></Rating>
+        <Rating :check=4 :out=1 :amount=3250 ></Rating>
+        <Rating :check=3 :out=2 :amount=1120 ></Rating>
+      </div>
     </div>
+    <button class="rating-button">clear all filters</button>
   </section>  
 </template>
 
 <script>
+
+import Rating from './Rating'
+
 export default {
   name: "Filters",
+  components: {
+    Rating
+  },
   data(){
     return{
       check: '$10',
@@ -146,6 +161,21 @@ hr{
 }
 .check-form>span>input{
   margin-right: 1rem;
+}
+.rating-title{
+  padding: 1rem 0;
+  text-transform: capitalize;
+}
+.rating-button{
+  width: 100%;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 600;
+  background: #6554C0;
+  color: #fff;
 }
 
 </style>

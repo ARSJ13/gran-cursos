@@ -1,5 +1,5 @@
 <template>
-  <header>
+  <header class="header-body">
     <v-container class="header-container">
       <div class="header-items">
         <v-icon>mdi-checkbox-marked-outline</v-icon>
@@ -31,7 +31,7 @@ export default {
 </script>
 
 <style>
-header{
+.header-body{
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.135216);
   border-radius: 8px;
 }
