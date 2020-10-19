@@ -1,24 +1,28 @@
-# gran
+# Processo seletivo de desenvolvedor FrontEnd - Gran Cursos
 
-## Project setup
+![version](https://img.shields.io/badge/version-1.0-blue.svg)
+
+
+**Features** utilizadas no desenvolvimento da aplicação:
+
+* Vue.js
+* Vuetify
+
+
+## Passos para execução do projeto:
+
+
+**Clone repositório**
+```
+git clone <repositório>
+```
+
+**Instalação**
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+**Execução modo desenvolvedor**
 ```
 npm run serve
 ```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
